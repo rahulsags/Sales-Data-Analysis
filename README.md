@@ -10,7 +10,7 @@ This project is a complete Sales Insights analysis using MySQL for data preproce
 Follow any latest video tutorial to install MySQL on your local machine.
 
 ### 2. Import Database
-- Download the SQL dump file: `db/db_dump.sql`
+- Download the SQL dump file: `Db/db_dump.sql`
 - Use the MySQL CLI or Workbench to import the database:
   ```sql
   SOURCE path/to/db_dump.sql;
@@ -33,7 +33,7 @@ To normalize the currency (USD to INR):
 ```m
 = Table.AddColumn(#"Filtered Rows", "norm_amount",
     each if [currency] = "USD" or [currency] ="USD#(cr)"
-    then [sales_amount] * 75 else [sales_amount], type any)
+    then [sales_amount] * 85 else [sales_amount], type any)
 ```
 
 ## ✅ Tools Used
@@ -42,5 +42,5 @@ To normalize the currency (USD to INR):
 - SQL Workbench / MySQL CLI
 
 ## 📌 Notes
-- Currency conversion rate used: 1 USD = 75 INR
+- Currency conversion rate used: 1 USD = 85 INR
 
