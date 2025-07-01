@@ -36,11 +36,11 @@ To normalize the currency (USD to INR):
     then [sales_amount] * 85 else [sales_amount], type any)
 ```
 
-## ✅ Tools Used
+## Tools Used
 - Power BI Desktop
 - MySQL
 - SQL Workbench / MySQL CLI
 
-## 📌 Notes
+## Notes
 - Currency conversion rate used: 1 USD = 85 INR
 
