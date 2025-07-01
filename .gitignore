@@ -1,31 +1,27 @@
-## Ignore Visual Studio SSDT sqlproj specific temporary files, build results, etc
-## 
-##
-## Get latest from https://github.com/github/gitignore/blob/master/SSDT-sqlproj.gitignore
-# Build output
-bin/
-obj/
+# .gitignore for Power BI + SQL Workbench project
 
-# DACPAC files
-*.dacpac
-
-# Publish profiles (optional, if environment-specific)
-*.publish.xml
-
-# SQL Server debug files
-*.dbmdl
-*.sqlcmdvars
-
-# Visual Studio settings
-.vs/
-
-# User-specific files
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-
-# Backup files
+# Power BI cache or temp files
+*.tmp
 *.bak
+*.cache
+*.pid
 *.log
 
+# SQL Workbench/J or MySQL Workbench temp files
+*.sql-journal
+*.err
+*.frm
+*.ibd
+*.MYD
+*.MYI
+
+# Editor-specific folders (optional, if you're using VS Code or any IDE)
+.vscode/
+.idea/
+
+# System files (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# Backup files (sometimes created by editors)
+*~
